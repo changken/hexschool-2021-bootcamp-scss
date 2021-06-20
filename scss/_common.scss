@@ -1,0 +1,42 @@
+//mb
+.mb-1 {
+  margin-bottom: 24px;
+}
+
+//mobile hide
+.mb-none {
+  @include mobile {
+    display: none;
+  }
+}
+
+.mb-show {
+  display: none;
+  @include mobile {
+    display: block;
+  }
+}
+
+//button
+.btn {
+  font-weight: $font-bold;
+  font-size: $base;
+
+  &.btn-outline {
+    border-radius: 30px;
+    background-color: transparent;
+    &.btn-white {
+      font-size: $larger3;
+      padding: 13px 109px;
+      border: 2px solid $whiteColor;
+      color: $whiteColor;
+    }
+
+    &.btn-black {
+      font-size: $larger;
+      padding: 18px 53px;
+      border: 2px solid $blackColor;
+      color: $blackColor;
+    }
+  }
+}
