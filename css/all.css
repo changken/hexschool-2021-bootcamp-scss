@@ -209,6 +209,12 @@ img {
   color: #000;
 }
 
+.link {
+  text-decoration: none;
+  color: #916019;
+  font-weight: 700;
+}
+
 body {
   font-family: "Noto Sans TC", sans-serif;
   font-weight: 400;
@@ -296,12 +302,13 @@ body {
 }
 .cta .content h2 {
   font-size: 40px;
-  font-weight: 700;
   line-height: 60px;
+  font-weight: 700;
 }
 .cta .content p {
   font-size: 24px;
   line-height: 36px;
+  font-weight: 400;
 }
 @media (max-width: 768px) {
   .cta .content {
@@ -383,19 +390,14 @@ body {
   padding: 0 110px;
 }
 .productIntro h2 {
-  font-weight: 700;
   font-size: 32px;
   line-height: 60px;
+  font-weight: 700;
 }
 .productIntro p {
   font-size: 20px;
   line-height: 30px;
   font-weight: 300;
-}
-.productIntro a {
-  text-decoration: none;
-  color: #916019;
-  font-weight: 700;
 }
 @media (max-width: 992px) {
   .productIntro {
@@ -538,5 +540,161 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+.bottleRecycle {
+  padding: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 992px) {
+  .bottleRecycle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.bottleRecycle .bottleRecycleImg {
+  display: block;
+  width: 730px;
+  height: 520px;
+}
+@media (max-width: 768px) {
+  .bottleRecycle .bottleRecycleImg {
+    width: 345px;
+  }
+}
+.bottleRecycle .content {
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 992px) {
+  .bottleRecycle .content {
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .bottleRecycle .content {
+    padding: 0 15px;
+  }
+}
+.bottleRecycle .content h2 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+}
+.bottleRecycle .content h3 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.bottleRecycle .content p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.subscribeArea {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true");
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+}
+.subscribeArea .content {
+  padding-top: 312px;
+}
+@media (max-width: 992px) {
+  .subscribeArea .content {
+    padding: 312px 15px;
+  }
+}
+.subscribeArea .content h2 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #8d8d8d;
+  margin-bottom: 20px;
+}
+.subscribeArea .content .subscribe input {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #8d8d8d;
+  padding: 20px;
+  border: 2px solid #916019;
+  margin-right: -4px;
+}
+.subscribeArea .content .subscribe .btn {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  outline: none;
+  border: 2px solid #916019;
+  background-color: #916019;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer {
+  background: #916019;
+}
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .container .footerLogoArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .container .footerLogoArea span {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  margin-left: 20px;
+  color: #fff;
+}
+.footer .container .footerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .container .footerMenu li a {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 18px;
+}
+@media (max-width: 768px) {
+  .footer .container .footerMenu {
+    display: none;
   }
 }

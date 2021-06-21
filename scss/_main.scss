@@ -69,13 +69,10 @@ body {
     color: $whiteColor;
     margin-right: 405px;
     h2 {
-      font-size: $larger5;
-      font-weight: $font-bold;
-      line-height: $lh-larger4;
+      @include font-setting($larger5, $lh-larger4, $font-bold);
     }
     p {
-      font-size: $larger2;
-      line-height: $lh-larger2;
+      @include font-setting($larger2, $lh-larger2, $font-regular);
     }
 
     @include pad {
@@ -122,19 +119,10 @@ body {
   height: 555px;
   padding: 0 110px;
   h2 {
-    font-weight: $font-bold;
-    font-size: $larger4;
-    line-height: $lh-larger4;
+    @include font-setting($larger4, $lh-larger4, $font-bold);
   }
   p {
-    font-size: $larger;
-    line-height: $lh-larger;
-    font-weight: $font-light;
-  }
-  a {
-    text-decoration: none;
-    color: $yellowColor;
-    font-weight: $font-bold;
+    @include font-setting($larger, $lh-larger, $font-light);
   }
   @include desktop {
     padding: 0 15px;
@@ -170,14 +158,10 @@ body {
   padding: 0 110px;
   li {
     h3 {
-      font-size: $larger2;
-      line-height: $lh-larger2;
-      font-weight: $font-bold;
+      @include font-setting($larger2, $lh-larger2, $font-bold);
     }
     p {
-      font-size: $base;
-      line-height: $lh-base;
-      font-weight: $font-light;
+      @include font-setting($base, $lh-base, $font-light);
       @include desktop {
         margin-bottom: 20px;
       }
@@ -206,9 +190,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: $base;
-      line-height: $lh-larger2;
-      font-weight: $font-bold;
+      @include font-setting($base, $lh-larger2, $font-bold);
       background: rgba(0, 0, 0, 0.3);
       color: $whiteColor;
       position: absolute;
@@ -234,15 +216,11 @@ body {
     }
 
     h2 {
-      font-size: $larger2;
-      line-height: $lh-larger2;
-      font-weight: $font-bold;
+      @include font-setting($larger2, $lh-larger2, $font-bold);
     }
     .productSampleAuthor,
     .productSamplePrice {
-      font-size: $base;
-      line-height: $lh-base;
-      font-weight: $font-light;
+      @include font-setting($base, $lh-base, $font-light);
     }
     .productSamplePrice {
       span {
@@ -255,5 +233,129 @@ body {
   @include desktop {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+// bottle recycle
+.bottleRecycle {
+  padding: 60px 0;
+  display: flex;
+
+  @include desktop {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottleRecycleImg {
+    display: block;
+    width: 730px;
+    height: 520px;
+    @include pad {
+      width: 345px;
+    }
+  }
+
+  .content {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include desktop {
+      margin-left: 0;
+    }
+
+    @include pad {
+      padding: 0 15px;
+    }
+
+    h2 {
+      @include font-setting($larger4, $lh-larger3, $font-bold);
+    }
+    h3 {
+      @include font-setting($larger, $lh-larger, $font-light);
+    }
+    p {
+      @include font-setting($base, $lh-base, $font-light);
+    }
+  }
+}
+
+//subscribeArea
+.subscribeArea {
+  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true');
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+
+  .content {
+    padding-top: 312px;
+    @include desktop {
+      padding: 312px 15px;
+    }
+
+    h2 {
+      @include font-setting($larger4, $lh-larger3, $font-bold);
+      color: $garyColorDark;
+      margin-bottom: 20px;
+    }
+
+    .subscribe {
+      input {
+        @include font-setting($base, $lh-base, $font-medium);
+        color: $garyColorDark;
+        padding: 20px;
+        border: 2px solid $yellowColor;
+        margin-right: -4px;
+      }
+
+      .btn {
+        @include font-setting($base, $lh-base, $font-medium);
+        outline: none;
+        border: 2px solid $yellowColor;
+        background-color: $yellowColor;
+        color: $whiteColor;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+//footer
+.footer {
+  background: $yellowColor;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footerLogoArea {
+      display: flex;
+      align-items: center;
+
+      span {
+        @include font-setting($smaller, $lh-smaller, $font-medium);
+        margin-left: 20px;
+        color: $whiteColor;
+      }
+    }
+
+    .footerMenu {
+      display: flex;
+      li {
+        a {
+          @include font-setting($larger, $lh-larger, $font-regular);
+          text-decoration: none;
+          color: $whiteColor;
+          display: block;
+          padding: 18px;
+        }
+      }
+
+      //pd-none
+      @include pad {
+        display: none;
+      }
+    }
   }
 }
