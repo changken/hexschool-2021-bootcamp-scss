@@ -12,6 +12,7 @@ body {
   }
 }
 
+// header
 .header {
   display: flex;
   justify-content: space-between;
@@ -35,14 +36,12 @@ body {
       color: $garyColorDark;
       text-decoration: none;
 
-      @include mobile {
+      @include pad {
         position: relative;
       }
 
       em {
-        display: none;
-        @include mobile {
-          display: block;
+        @include pad {
           position: absolute;
           top: 10px;
           right: 10px;
@@ -55,6 +54,7 @@ body {
   }
 }
 
+// call to action
 .cta {
   display: flex;
   align-items: center;
@@ -81,9 +81,6 @@ body {
     @include pad {
       max-width: auto;
       margin-right: 0;
-    }
-
-    @include mobile {
       padding-right: 15px;
       padding-left: 15px;
     }
@@ -91,5 +88,103 @@ body {
 
   @include pad {
     justify-content: center;
+  }
+}
+
+// productList
+.productList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 0;
+  > li {
+    display: flex;
+    justify-content: center;
+    &.productReverse {
+      flex-direction: row-reverse;
+      @include desktop {
+        flex-direction: column;
+      }
+    }
+    @include desktop {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+}
+
+.productIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 555px;
+  height: 555px;
+  padding: 0 110px;
+  h2 {
+    font-weight: $font-bold;
+    font-size: $larger4;
+    line-height: $lh-larger4;
+  }
+  p {
+    font-size: $larger;
+    line-height: $lh-larger;
+    font-weight: $font-light;
+  }
+  a {
+    text-decoration: none;
+    color: $yellowColor;
+    font-weight: $font-bold;
+  }
+  @include desktop {
+    padding: 0 15px;
+  }
+  @include pad {
+    width: 345px;
+    height: auto;
+    margin-bottom: 32px;
+  }
+}
+
+//productList
+.productImg {
+  display: block;
+  width: 555px;
+  height: 555px;
+
+  @include pad {
+    width: 345px;
+    height: 350px;
+  }
+
+  &.productImgLong {
+    height: 1080px;
+  }
+}
+
+.productIntroList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 555px;
+  padding: 0 110px;
+  li {
+    h3 {
+      font-size: $larger2;
+      line-height: $lh-larger2;
+      font-weight: $font-bold;
+    }
+    p {
+      font-size: $base;
+      line-height: $lh-base;
+      font-weight: $font-light;
+      @include desktop {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @include pad {
+    padding: 0 15px;
+    width: 345px;
   }
 }
