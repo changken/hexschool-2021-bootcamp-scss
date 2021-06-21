@@ -14,6 +14,7 @@ body {
 
 // header
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,6 +50,38 @@ body {
           background: $yellowColor;
           color: $whiteColor;
         }
+      }
+    }
+  }
+}
+
+.mobileMenu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 375px;
+  transition: 0.8s all;
+  max-height: 0px;
+  overflow: hidden;
+  z-index: 120;
+
+  &.active {
+    max-height: 300px;
+  }
+
+  li {
+    a {
+      padding: 16px 0;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      background: #707070;
+      color: $whiteColor;
+      border: 1px solid $whiteColor;
+      @include font-setting($larger, $lh-base, $font-regular);
+
+      &:hover {
+        background: $garyColorDark;
       }
     }
   }
@@ -350,11 +383,6 @@ body {
           display: block;
           padding: 18px;
         }
-      }
-
-      //pd-none
-      @include pad {
-        display: none;
       }
     }
   }

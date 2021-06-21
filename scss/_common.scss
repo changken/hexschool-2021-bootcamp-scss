@@ -14,7 +14,7 @@
 // pad hide
 .pd-none {
   @include pad {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -22,14 +22,14 @@
 .pd-show {
   display: none;
   @include pad {
-    display: block;
+    display: block !important;
   }
 }
 
 //mobile hide
 .mb-none {
   @include mobile {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -37,7 +37,7 @@
 .mb-show {
   display: none;
   @include mobile {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -70,4 +70,9 @@
   text-decoration: none;
   color: $yellowColor;
   font-weight: $font-bold;
+}
+
+//icon
+.icon {
+  color: $yellowColor;
 }
