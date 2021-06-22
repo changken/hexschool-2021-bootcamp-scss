@@ -1,0 +1,55 @@
+// productItem
+.productItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0 60px;
+
+  @include desktop {
+    padding: 80px 15px 60px;
+    justify-content: center;
+  }
+
+  .productItenImgArea {
+    width: 730px;
+    img {
+      display: block;
+    }
+    .image-group {
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 350px;
+      }
+    }
+  }
+  .content {
+    width: 350px;
+    h2 {
+      @include font-setting($larger4, $lh-larger3, $font-bold);
+    }
+    h3 {
+      @include font-setting($larger, $lh-larger, $font-light);
+    }
+
+    .form-group {
+      display: flex;
+      .form-control {
+        @include font-setting($base, $lh-smaller2, $font-regular);
+        color: #495057;
+        padding: 16px;
+      }
+      .btn {
+        &.btn-primary {
+          padding: 14px;
+        }
+      }
+    }
+
+    h4 {
+      @include font-setting($base, $lh-base, $font-medium);
+    }
+    p {
+      @include font-setting($base, $lh-base, $font-light);
+    }
+  }
+}
