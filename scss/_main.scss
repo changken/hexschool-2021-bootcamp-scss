@@ -366,6 +366,10 @@ body {
       display: flex;
       align-items: center;
 
+      img {
+        cursor: pointer;
+      }
+
       span {
         @include font-setting($smaller, $lh-smaller, $font-medium);
         margin-left: 20px;

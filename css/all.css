@@ -634,6 +634,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.footer .container .footerLogoArea img {
+  cursor: pointer;
+}
 .footer .container .footerLogoArea span {
   font-size: 14px;
   line-height: 21px;
@@ -747,6 +750,53 @@ body {
   text-decoration: underline;
 }
 
+.loginSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 80px 0;
+}
+@media (max-width: 992px) {
+  .loginSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 15px 106px;
+  }
+}
+.loginSection img {
+  display: block;
+  width: 730px;
+  height: 730px;
+}
+@media (max-width: 992px) {
+  .loginSection img {
+    margin-bottom: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .loginSection img {
+    width: 345px;
+    height: 220px;
+  }
+}
+.loginSection .content {
+  width: 350px;
+}
+.loginSection .content h2 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
 .mb-1 {
   margin-bottom: 8px;
 }
@@ -792,6 +842,7 @@ body {
 .btn {
   font-weight: 700;
   font-size: 16px;
+  cursor: pointer;
 }
 .btn.btn-outline {
   border-radius: 30px;
@@ -809,6 +860,35 @@ body {
   border: 2px solid #000;
   color: #000;
 }
+.btn.btn-primary {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  padding: 8px 16px;
+  background: #916019;
+  color: #fff;
+  border: 1px solid #916019;
+  border-radius: 3px;
+}
+.btn.btn-primary.btn-primary-outline {
+  background: #fff;
+  color: #916019;
+}
+
+.form-group {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.form-group .form-control {
+  width: 100%;
+  padding: 10px;
+  color: #818a91;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #ced4da;
+}
 
 .link {
   text-decoration: none;
@@ -818,4 +898,22 @@ body {
 
 .icon {
   color: #916019;
+}
+
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.jcsb {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.aic {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
 }

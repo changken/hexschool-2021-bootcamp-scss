@@ -45,6 +45,7 @@
 .btn {
   font-weight: $font-bold;
   font-size: $base;
+  cursor: pointer;
 
   &.btn-outline {
     border-radius: 30px;
@@ -63,6 +64,37 @@
       color: $blackColor;
     }
   }
+
+  &.btn-primary {
+    // line height should be 22px
+    @include font-setting($base, $lh-smaller, $font-regular);
+    padding: 8px 16px;
+    background: $yellowColor;
+    color: $whiteColor;
+    border: 1px solid $yellowColor;
+    border-radius: 3px;
+
+    &.btn-primary-outline {
+      background: $whiteColor;
+      color: $yellowColor;
+    }
+  }
+}
+
+// form
+.form-group {
+  // line height should be 19px or 22px
+  @include font-setting($base, $lh-smaller, $font-regular);
+  margin-bottom: 20px;
+
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    color: #818a91;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ced4da;
+  }
 }
 
 // link
@@ -75,4 +107,17 @@
 //icon
 .icon {
   color: $yellowColor;
+}
+
+// flex
+.d-flex {
+  display: flex !important;
+}
+
+.jcsb {
+  justify-content: space-between !important;
+}
+
+.aic {
+  align-items: center !important;
 }
