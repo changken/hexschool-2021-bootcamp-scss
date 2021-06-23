@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香水電商</title>
+    <script src="https://kit.fontawesome.com/45116de693.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><a class="logo" href="index.html">D'Perfume</a></h1>
+            <ul class="menu">
+                <li class="pd-none"><a href="productPage.html"><i class="fas fa-store-alt"></i>Product</a></li>
+                <li class="pd-none"><a href="#"><i class="fas fa-user"></i>Mypage</a></li>
+                <li class="pd-none"><a href="#"><i class="fas fa-heart"></i>Wishlist</a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i><span class="pd-none">Cart(3)</span><em class="pd-show">3</em></a></li>
+                <li class="pd-show hambar"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+            <ul class="mobileMenu">
+                <li><a href="productPage.html">Product</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Mypage</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="brandMenuArea pd-none">
+        <ul class="brandMenu container">
+            <li><a href="#">CHANEL</a></li>
+            <li><a href="#">Jo Malone</a></li>
+            <li><a href="#">Curology</a></li>
+            <li><a href="#">Dior</a></li>
+            <li><a href="#">Chloe</a></li>
+            <li><a href="#">ZARA</a></li>
+        </ul>
+    </div>
+    <div class="settingArea container">
+        <div class="settingMenuArea">
+            <h2 class="dk-none mb-3-5">會員中心</h2>
+            <ul class="settingMenu">
+                <li><a href="#" class="active">會員資料修改</a></li>
+                <li><a href="#">訂單查詢</a></li>
+                <li><a href="#">退／換貨申請</a></li>
+            </ul>
+        </div>
+       <div class="personalSettingArea">
+           <h3 class="mb-2">個人資料修改</h3>
+           <form action="">
+                <div class="form-group">
+                    <label>會員帳號</label>
+                    <p>email@example.com</p>
+                </div>
+                <div class="form-group">
+                    <label for="fullname">會員姓名</label>
+                    <input type="text" name="fullname" id="fullname" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="gander">會員性別</label>
+                    <select name="gander" id="gander" class="custom-select">
+                        <option value="male">男</option>
+                        <option value="female" selected>女</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">電子信箱</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="email@example.com" value="email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">手機號碼</label>
+                    <input type="tel" name="phone" id="phone" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="address">聯絡地址</label>
+                    <div class="form-fields">
+                        <select name="country" id="country" class="custom-select mb-1">
+                            <option value="tw" selected>台灣及離島</option>
+                            <option value="cn">中國</option>
+                        </select><br>
+                        <select name="counties" id="counties" class="custom-select mb-1 mr-1">
+                            <option value="高雄市" selected>高雄市</option>
+                            <option value="新北市">新北市</option>
+                        </select>
+                        <select name="district" id="district" class="custom-select mb-1">
+                            <option value="鹽埕區" selected>鹽埕區</option>
+                            <option value="前鎮區">前鎮區</option>
+                        </select><br>
+                        <input type="text" name="address" id="address" class="form-control mb-1-5 placeholder="請輸入地址"><br>
+                        <p><input type="checkbox" name="discountNotice" id="discountNotice" class="custom-checkbox" checked>我願意收到最新優惠情報</p>
+                    </div>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="shipAddress">配送地址</label>
+                    <div class="form-fields">
+                        <select name="country" id="country" class="custom-select mb-1">
+                            <option value="tw" selected>台灣及離島</option>
+                            <option value="cn">中國</option>
+                        </select><br>
+                        <select name="counties" id="counties" class="custom-select mb-1 mr-1">
+                            <option value="高雄市" selected>高雄市</option>
+                            <option value="新北市">新北市</option>
+                        </select>
+                        <select name="district" id="district" class="custom-select mb-1">
+                            <option value="鹽埕區" selected>鹽埕區</option>
+                            <option value="前鎮區">前鎮區</option>
+                        </select><br>
+                        <input type="text" name="address" id="address" class="form-control" placeholder="請輸入地址"><br>
+                    </div>
+                </div>
+                <div class="form-group mb-6">
+                    <button type="button" class="btn btn-primary">確認修改</button>
+                </div>
+           </form>
+           <h3 class="mb-2">修改密碼</h3>
+           <form action="">
+                <div class="form-group">
+                    <label for="oldPassword">舊密碼</label>
+                    <input type="password" name="oldPassword" id="oldPassword" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">新密碼</label>
+                    <input type="password" name="newPassword" id="newPassword" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="newPassword2">確認密碼</label>
+                    <input type="password" name="newPassword2" id="newPassword2" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary">變更密碼</button>
+                </div>
+           </form>
+       </div>
+       <div class="personalInfoArea">
+           <h2 class="mb-3"><i class="fas fa-user"></i>&nbsp;會員編碼&nbsp;<span>T00020080615</span></h2>
+           <ul class="personalInfoList">
+               <li><span class="title">購物車</span><span>56</span></li>
+               <li><span class="title">我的收藏</span><span>23</span></li>
+               <li><span class="title">完成訂單</span><span>8</span></li>
+               <li><span class="title">會員紅利</span><span>2680</span></li>
+               <li><span class="title">邀請碼</span><span>TK2075</span></li>
+               <li class="note">新戶輸入邀請碼即可獲贈紅利點數1000點</li>
+           </ul>
+       </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footerLogoArea">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfumewhite.png" alt="logo" onclick="location.href='index.html'">
+                <span>&copy; 2020. All Rights Reserved.</span>
+            </div>
+            <ul class="pd-none footerMenu">
+                <li><a href="productPage.html">Product</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
